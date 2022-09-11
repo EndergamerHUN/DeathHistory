@@ -1,0 +1,4 @@
+name: DeathHistory
+version: '${project.version}'
+main: io.github.endergamerhun.deathhistory.DeathHistory
+api-version: 1.18
