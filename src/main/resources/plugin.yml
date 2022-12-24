@@ -2,3 +2,6 @@ name: DeathHistory
 version: '${project.version}'
 main: io.github.endergamerhun.deathhistory.DeathHistory
 api-version: 1.18
+commands:
+  deathhistory:
+    description: Shows the information about a player's last death.

@@ -1,7 +1,7 @@
 package io.github.endergamerhun.deathhistory;
 
 import io.github.endergamerhun.deathhistory.command.CommandHandler;
-import io.github.endergamerhun.deathhistory.events.PlayerDeath;
+import io.github.endergamerhun.deathhistory.events.DeathManager;
 import io.github.endergamerhun.deathhistory.utils.Util;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -10,7 +10,7 @@ public class DeathHistory extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        getServer().getPluginManager().registerEvents(new PlayerDeath(), this);
+        getServer().getPluginManager().registerEvents(new DeathManager(), this);
         getCommand("deathhistory").setExecutor(new CommandHandler());
         Util.log("Plugin loaded");
     }
